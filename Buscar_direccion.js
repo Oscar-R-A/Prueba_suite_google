@@ -15,6 +15,6 @@ describe('Buscar una dirección desde el navegador', function(){
         cy.get('#sb_ifc51 > .tactile-searchbox-input').type('Cinte bogotá {Enter}');
     })
     it('Assert el cual valida que realizo la busqueda de manera correcta', function(){
-        expect(cy.get('.widget-scene-canvas')).to.exit;
+        expect(cy.get('.widget-scene-canvas')).to.exist;
     })
 })
